@@ -1,4 +1,5 @@
 from produtos_classes import Produto, ProdutoImportado, ProdutoNacional
+from funcionarios import Funcionario, FuncionarioCLT, FuncionariosPJ
 
 #pedido do exercício 1
 p = Produto("Teclado",100.0,20)
@@ -25,3 +26,11 @@ print()
 a=Produto("Chinelo",150,5)
 a.repor(5)
 a.vender(5)
+
+#teste do exercicio 6
+print()
+p_clt=FuncionarioCLT("Marianina", 5000)
+p_clt.calcular_pagamento()
+
+p_pj= FuncionariosPJ("Juana",120,20)
+p_pj.calcular_pagamento()
